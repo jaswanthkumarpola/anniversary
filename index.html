@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Radha & Murali</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(#fffaf0, #ffe4e1);
+            color: #333;
+            overflow-x: hidden;
+        }
+        /* Top Tap Prompt and Button */
+        .tap-prompt-top {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .arrow-top {
+            font-size: 3rem;
+            animation: bounce 1.5s infinite;
+        }
+        .tap-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: #c0392b;
+            margin-top: 5px;
+        }
+        .music-button-top {
+            display: block;
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.5rem;
+            color: white;
+            background-color: #c0392b;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 20px auto 0;
+            transition: background-color 0.3s ease;
+        }
+        .music-button-top:hover {
+            background-color: #e74c3c;
+        }
+        /* Bounce keyframes */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(-15px); }
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 20px 10px;
+        }
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            color: #c0392b;
+            margin: 0;
+        }
+        header p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 90%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+        .message {
+            max-width: 90%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .message p {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Arrow, Prompt Text, and Play Button at Top -->
+    <div class="tap-prompt-top">
+        <div class="arrow-top">👇</div>
+        <div class="tap-text">Tap Here</div>
+        <button class="music-button-top" onclick="playMusic()">Play Music</button>
+        <audio id="anniversary-music" style="display: none;" preload="auto">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <header>
+        <h1>Happy Anniversary Radha & Murali ❤️</h1>
+        <p>Celebrating your journey together since April 18, 2000</p>
+    </header>
+
+    <div class="gallery">
+        <img src="1_img.png">
+        <img src="2_img.png">
+        <img src="3_img 2.png">
+    </div>
+
+    <div class="message">
+        <p>Mummy and Daddy,</p>
+        <p>First time anukunta me anniversary ki nen lenu, Nak telsi inko 3 years varku kuda ilane untadi. Aa pandagaina inka daddy ki avvar undaru pandagatho thittadaniki😂, Inka mummy venaka nundi pandagatho nduku ra dobbulu thintav ani 😂.</p>
+        <p>Adi vadiesthe Nen ila oka chinna surprise la cheddam anukunna naaku telsinattu and naa budget lo (Naaku kuda kharchulu untai kada - dabbulu dachukovali 😁 avvarki urkane raavu).</p>
+        <p>Nenu manchiga ne chaduvukuntunna, inka manchigane untunna, time ke thintunna, padukuntunna. So naa kosam em alochinchaddu baage chaduvutha nenu (Koncham bane develop ayyina 😁).</p>
+        <p>Inka naku em cheppali ani em telvatledu. Sarele inka, I wish nen pampina cake bane undani anukuntunna 🙂, kaluddam twaralone 😎 (May-20).</p>
+        <p style="text-align:center; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">HAPPY WEDDING ANNIVERSARY MUMMY AND DADDY ❤️🥳</p>
+    </div>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("anniversary-music");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
